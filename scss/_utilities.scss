@@ -1,0 +1,48 @@
+// Button
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 30px;
+  border-radius: 20px;
+  margin: 8px;
+}
+
+.btn-dark {
+  background-color: $dark-color;
+  color: #f4f4f4;
+  &:hover {
+    color: #f4f4f4;
+    opacity: 0.9;
+  }
+}
+
+.btn-light {
+  background-color: #f4f4f4;
+  border-color: $dark-color;
+  border-style: solid;
+  border-width: thin;
+  &:hover {
+    background-color: $dark-color;
+    color: #f4f4f4
+  }
+}
+
+// Flex column
+
+.flex-column {
+  .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+}
