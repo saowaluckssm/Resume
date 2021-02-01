@@ -1,11 +1,35 @@
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+  
+  
+  
+}
+
+section {
+  padding: 10% 300px;
+  background-color: $main-color;
+}
+
+
 // Button
 
 .btn {
+  font-family: 'PT Sans', sans-serif;
   cursor: pointer;
   display: inline-block;
   padding: 5px 30px;
   border-radius: 20px;
   margin: 8px;
+}
+
+.btn-small {
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 2px 5px;
 }
 
 .btn-dark {
@@ -36,13 +60,13 @@
     flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
+    .column {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+    }
   }
-  .column {
-    display: flex;
-    flex-direction: column;
-    height: 550px;
-    flex-basis: 100%;
-    flex: 1;
-  }
+  
 
 }
