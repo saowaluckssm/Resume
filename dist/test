@@ -1,8 +1,4 @@
-@import "config";
-@import "utilities";
-
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -21,6 +17,7 @@ a {
   }
 }
 
+
 ul {
   list-style: none;
 }
@@ -33,11 +30,15 @@ h4 {
   font-family: 'Prompt', sans-serif;
 }
 
+.mg-2 {
+  margin-bottom: 50px;
+}
+
 img {
   width: 100%;
 }
 
-// Nav Bar
+// NAVBAR
 
 #navbar {
   display: flex;
@@ -49,17 +50,11 @@ img {
   width: 100%;
   height: 100px;
   background-color:#f4f4f4;
-  // overflow: auto;
-  .logo {
-    padding: 20px;
-    text-align: center;
-    .logo-text {
-      font-size: 25px;
-      margin: 0 10px;
-      color: $dark-color;
-    }
-  }
+  overflow: auto;
   nav {
+    
+
+
     ul {
       display: flex;
       padding: 0 50px;
@@ -81,92 +76,109 @@ img {
         }
       }
     }
+
+  }
+  
+  .logo {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    .logo-text {
+      font-size: 25px;
+      margin: 0 10px;
+      color: $dark-color;
+
+    }  
+  }
  
-  }
 }
 
-#home-content {
+
+// Home Hearder
+
+header {
   background: linear-gradient(to left, #f4f4f4 60%, $main-color 40%);
-  height: 100vh;
+  height: 80vh;
   padding: 10%;
-
   
-
-  .column-1 {
-    align-items: center;
-    background-color: $light-color;
-    padding: 0 2px;
-    width: 65%;
-    height: 95%;
-    margin-left: 180px;
-    box-shadow: -10px 8px 45px gray;
-    img {
-      border-radius: 50%;
-      width: 250px;
-      height: 250px;
-      margin: 40px 20px 50px;
-      object-fit: cover;
-      object-position: 100% 5%;
-    }
-    h2 {
-      margin-bottom: 30px;
-    }
-    p {
-      font-size: 22px;
-      margin-bottom: 45px;
-    }
-  }
-
-
-
   
-
-  .column-2 {
+  #home-content {
     
-    background-color: #f4f4f4;
-    height: 550px;
-    padding: 10px 50px;
-    margin: 20px;
-
-    h1 {
-      font-size: 100px;
-      margin-bottom: 10px;
-      cursor: pointer;
+    padding: 20px;
+    
+    
+    .column-1 {
       
+      background-color: $light-color;
+      margin-left: 180px;
+      align-items: center;
+      text-align: center;
+      padding-top: 30px;
+      width: 400px;
+      box-shadow: -10px 8px 45px gray;
       
-    }
-    // #hello:after {
-    //  content: "Hello";
+      img {
+         height: 220px;
+         width: 220px;
+         border-radius: 50%;
+         margin: 25px 0 40px;
+      }
+      h2 {
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-bottom: 50px;
+      }
+   
+    }  
 
-    // }
-    // #hello:hover:after{
-    //   content:'"สวัสดี"';
-      
-    // }
+    .column-2 {
+      background-color: #f4f4f4;
+      height: 550px;
+      padding: 20px 50px;
 
-  
+      h1 {
+        font-size: 100px;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 18px;
+      }
 
-    p {
-      font-size: 18px;
     }
 
   }
+  
 
+  
 }
 
+.social {
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+  text-align: center;
+  align-items: center;
 
+  a {
+    padding: 15px 0;
+    margin: 0 10px;
+  }
+}
 
 // Resume
 #resume {
-  padding: 10%;
   h1 {
     text-align: center;
-    font-size: 40px;
-    margin-bottom: 30px;
-
+  }
+  
+  padding: 10%;
+  h1 {
+    font-size: 50px;
+    margin-bottom: 80px;
   }
   .head-resume {
-    padding: 0 60px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
@@ -175,59 +187,49 @@ img {
     }
     
   }
- .resume-column {
-  background-color: #f4f4f4;
-  padding: 50px;
-  margin-bottom: 50px;
-  box-shadow: -30px 17px $medium-color;
-  img {
-    width: auto;
-    height: 115px;
-    padding: 10px;
-    margin: 15px;
-    
-  }
-  h3 {
-    font-size: 20px;
-  }
-  p {
-    font-size: 18px;
-  }
- }
 
+  .resume-column {
+    background-color: #f4f4f4;
+    padding: 100px 50px;
+    margin-bottom: 70px;
+    box-shadow: -30px 17px $medium-color;
+    h3 {
+      font-size: 20px;
+    }
+  }
 }
 
 // Project
-
-#project {
-  padding: 10%;
-  .head-project {
-    
+section {
+  #project {
     text-align: center;
-    margin-bottom: 50px;
+    padding: 10%;
+    
     h1 {
-      font-size: 40px;
+      font-size: 50px;
       margin-bottom: 30px;
     }
     p {
-      font-size: 18px;
+      font-size: 20px;
     }
+
   }
-  .row {
-    padding: 10px;
-    margin: 20px 20px 100px;
+
+  .project-column {
+    height: 400px;
     background-color: #f4f4f4;
+    margin-bottom: 150px;
     box-shadow: -30px 17px $medium-color;
-    
     img {
-      // margin: 10px;
       height: 100%;
+      
+    
     }
 
     .project-content {
       padding: 50px 40px;
       h2 {
-        margin-bottom: 20px;
+        margin-bottom: 50px;
         color: $dark-color;
       }
       p {
@@ -235,26 +237,27 @@ img {
       }
     }
   }
- 
-  
-
-
-  
 }
 
 #contact {
   background-color: #f4f4f4;
-  padding: 30px 20px;
-  margin: 15% 10%;
+  padding: 40px 60px 10px;
+
   h3 {
     font-size: 22px;
     margin-bottom: 30px;
   }
+
   p {
-    font-size: 19px;
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 16px;
   }
   .column {
-    padding: 40px 30px;
+    padding: 50px 30px;
+
     .text-fields {
       
       display: grid;
@@ -286,22 +289,18 @@ img {
         border: 1px solid gray;
         border-radius: 4px;
         &:focus {
-          border: 1px solid $medium-color;
+          border: 3px solid $medium-color;
         }
 
       }
     }
+
   }
-
-
 }
-
-
-
 
 footer {
   background-color: #f4f4f4;
-  height: 80px;
+  height: 50px;
   text-align: center;
   align-items: center;
   padding-top: 20px;
@@ -309,4 +308,39 @@ footer {
 
 }
 
+// import media queries
 @import "media";
+
+
+
+
+
+
+ .column-1 {
+    background-color: $light-color;
+    margin-left: 180px;
+    align-items: center;
+    text-align: center;
+    
+    width: 400px;
+    
+    box-shadow: -10px 8px 45px gray;
+
+    img {
+      height: 220px;
+      width: 220px;
+      border-radius: 50%;
+      margin: 40px 20px 90px;
+      
+   }
+   h2 {
+     margin-bottom: 40px;
+   }
+   p {
+     font-size: 18px;
+     letter-spacing: 1px;
+     margin-bottom: 50px;
+   }
+   
+
+  }

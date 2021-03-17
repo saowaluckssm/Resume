@@ -1,0 +1,339 @@
+// Tablets & Smaller
+@media (max-width: 800px) {
+   #navbar {
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    align-items: center;
+    padding: 15px 10px;
+    .logo {
+      padding: 8px;
+      margin-bottom: 0;
+    }
+    nav {
+      
+      ul {
+        li {
+          a {
+            padding: 8px 5px;
+          
+          }
+        }
+      }
+    }
+  }
+
+  #home-content {
+    height: 100%;
+    padding-left: 40px;
+    
+    
+    .column-1 {
+      margin: 100px 70px 50px;
+      padding: 15px 10px 5px;
+      width: 300px;
+      h2 {
+        font-size: 22px;
+      }
+      img {
+        height: 180px;
+        width: 180px;
+        margin: 10px 0 30px;
+      }
+    }
+    .column-2 {
+      background-color:$medium-color;
+      height: 550px;
+      width: 500px;
+      padding: 30px 30px 35px;
+      box-shadow: 14px -8px $light-color;
+      // margin-left: 50px;
+      margin: auto;
+      h1 {
+        
+        font-size: 50px;
+      }
+    }
+  }
+
+  #resume {
+    margin-top: 90px;
+    h1 {
+      font-size: 25px;
+    }
+    .head-resume {
+      margin-bottom: 40px;
+      h3 {
+        font-size: 22px;
+        padding: 10px;
+      }
+    }
+    .resume-column {
+      padding: 15px;
+      .column {
+        padding: 8px;
+        h3 {
+          margin-bottom: 10px;
+        }
+        p {
+          margin-bottom: 6px;
+        }
+      }
+    }
+  }
+
+  #project {
+    margin-top: 90px;
+    padding: 70px 40px;
+    .head-project {
+      margin-bottom: 40px;
+      h1 {
+        font-size: 25px;
+      }
+    }
+    .row {
+      img {
+       object-fit: contain;
+      }
+
+      .project-content {
+        padding: 20px;
+        h2 {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+    #contact {
+      margin: 220px 90px 120px;
+      padding: 20px 10px 0;
+
+      .column {
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+    }
+
+} 
+
+
+
+
+@media (max-width: 500px) {
+  #navbar {
+    
+   padding: 8px;
+   height: 110px;
+    .logo {
+      padding: 5px 0;
+
+      h3 {
+        font-size: 16px;
+      }
+      .logo-text {
+        font-size: 15px;
+      }
+    }
+    nav {
+      ul {
+        margin: 5px;
+        padding: 0 10px;
+        li {
+          font-size: 12px;
+          
+          a {
+            padding: 3px;
+            margin: 3px;
+          }
+        }
+      }
+    }
+  }
+  #home-content {
+    width: auto;
+    padding: 10px;
+    align-items: center;
+
+    
+    .column-1 {
+      padding: 10px 2px 2px;
+      margin: 120px 20px 60px;
+      h2 {
+        font-size: 15px;
+        margin-bottom: 14px;
+      }
+      p {
+        font-size: 16px;
+        margin-bottom: 22px;
+      }
+      .social {
+        i {
+          font-size: 22px;
+        }
+      }
+    }
+    .column-2 {
+      padding: 20px 15px;
+      margin: 0 20px 50px;
+      width: 320px;
+      height: auto;
+      h1 {
+        font-size: 23px;
+      }
+      p {
+        font-size: 14px;
+      
+      }
+      a {
+        font-size: 14px;
+      }
+    }
+    
+  }
+
+ // Resume
+  #resume {
+  
+   
+   h1 {
+     font-size: 18px;
+     margin-bottom: 10px;
+   }
+   .head-resume {
+    
+     padding: 10px;
+     margin-bottom: 5px;
+     h3 {
+       font-size: 16px;
+     }
+     a {
+       font-size: 12px;
+       
+     }
+   }
+ 
+
+
+   .resume-column {
+    
+     padding: 10px;
+     display: flex;
+     flex-direction: column;
+     box-shadow: -12px 15px $medium-color;
+     margin-bottom: 30px;
+     
+     
+     h3 {
+       font-size: 16px;
+     }
+   }
+
+   .skillset {
+    display: flex;
+    flex-direction: row;
+    div {
+      
+      img {
+        width: 80px;
+      }
+    }
+   
+  }
+
+
+
+ }
+
+ #project {
+    padding: 40px 20px;
+    
+    .head-project {
+      margin-bottom: 20px;
+      h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .row {
+      img {
+        object-fit: contain;
+      }
+      margin: 10px 10px 40px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: -12px 15px $medium-color;
+      .project-content{
+        padding: 10px;
+        h2 {
+          font-size: 20px;
+          margin-bottom: 6px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      
+    } 
+
+ }
+
+ #contact {
+   margin: 150px auto 40px;
+   padding-top: 10px;
+   h3 {
+     font-size: 20px;
+     margin-bottom: 10px;
+   }
+   p {
+     font-size: 16px;
+   }
+    .column {
+      padding: 15px;
+      .text-fields {
+       display: grid;
+       grid-template-areas: 
+       "name"
+       "email"
+       "phone"
+       "message";
+       grid-gap: 15px;
+       margin-bottom: 15px;
+      }
+    }
+    .social {
+      padding: 8px;
+      i {
+        font-size: 22px;
+      }
+
+
+  }
+ }
+
+   
+
+
+
+
+ 
+
+
+
+
+
+
+ footer {
+   padding: 10px;
+   height: 50px;
+   align-items: center;
+   p {
+     font-size: 10px;
+   }
+ }
+
+
+}
