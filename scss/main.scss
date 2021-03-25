@@ -180,13 +180,18 @@ img {
   padding: 50px;
   margin-bottom: 50px;
   box-shadow: -30px 17px $medium-color;
+  display: flex;
   img {
     width: auto;
     height: 115px;
     padding: 10px;
     margin: 15px;
-    
   }
+
+  .column {
+    width: 50%;
+  }
+  
   h3 {
     font-size: 20px;
   }

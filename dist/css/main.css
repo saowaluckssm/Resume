@@ -182,12 +182,15 @@ img {
     background-color: #f4f4f4;
     padding: 50px;
     margin-bottom: 50px;
-    box-shadow: -30px 17px #dcd6f7; }
+    box-shadow: -30px 17px #dcd6f7;
+    display: flex; }
     #resume .resume-column img {
       width: auto;
       height: 115px;
       padding: 10px;
       margin: 15px; }
+    #resume .resume-column .column {
+      width: 50%; }
     #resume .resume-column h3 {
       font-size: 20px; }
     #resume .resume-column p {
